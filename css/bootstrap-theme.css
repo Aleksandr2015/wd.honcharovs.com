@@ -159,6 +159,7 @@ a, a:hover, a:active, a:focus {color: #3472BD;}
     padding: 0;
     color: #fff;
     margin-top: 0;
+    background: #1461A9;
 /*
     border: 1px solid #3472BD;  
     border: 1px solid rgba(52,114,189,.85);  
@@ -167,7 +168,8 @@ a, a:hover, a:active, a:focus {color: #3472BD;}
 }
 
 .cust-port-descr-wrap:hover {
-	background: rgba(52,114,189,.85);
+    background: #115594;    
+/*	background: rgba(52,114,189,.85);*/
 }
 
 .cust_portfolio_block h3 {    
@@ -175,8 +177,11 @@ a, a:hover, a:active, a:focus {color: #3472BD;}
     margin: 0;
     padding-bottom: 10px;
     padding-top: 10px;    
+/*
     background: #3472BD;
     background: rgba(52,114,189,.85);
+*/
+/*    background: #1461A9;*/
 }
 
 .cust_portfolio_block .btn {
@@ -187,7 +192,9 @@ a, a:hover, a:active, a:focus {color: #3472BD;}
     border-top-right-radius: 0;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    background: rgba(52,114,189,.85);
+    background: transparent;
+/*    background: #1461A9;*/
+    /*background: rgba(52,114,189,.85);*/
     color: #fff;
 }
 
