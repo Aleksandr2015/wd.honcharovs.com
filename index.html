@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="description" content="Услуги веб-дизайнера в Днепропетровске +38(067)522-37-21, +38(093)485-31-09. Создание сайта, визитки, лендинга, верстка html-страниц, html-писем и промо страниц.">
+        <meta name="keywords" content="создать сайт в Днепропетровске, веб-дизайнер Днепропетрвоск, сайт визитка, создать лендинг, простой сайт, уникальный сайт, разработака сайта, нужен сайт, купить сайт">
+        <meta name="author" content="Aleksandr Honcharov">
+        <link rel="shortcut icon" href="">
+        <title>Александр Гончаров | Веб-дизайнер</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- Bootstrap theme CSS -->
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <!-- Bootstrap non-responsive CSS -->
+        <link href="css/non-responsive.css" rel="stylesheet">
+        <!-- Bootstrap custom honcharovs CSS -->
+        <link href="css/custom-honcharovs-coding-styles.css" rel="stylesheet">
+        <!-- Include Font Dintextpro -->
+        <link href="fonts/dintextpro/pfdintextcondpro.css" rel="stylesheet">
+        <link href="fonts/idealistsans/styles.css" rel="stylesheet">
+        <!-- Include Font Awesome Stylesheet -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <meta name='yandex-verification' content='64473607a8369368' />
+        <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter26046204 = new Ya.Metrika({id:26046204, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/26046204" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+    </head>
+    <body> 
+        <!-- Modal Mail -->
+        <div class="modal fade bootstrap-modal" id="modalMail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="letter-spacing:1px;">
+                <div class="modal-content" style="height:350px;">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="myModalLabel">Заполните поля ниже и нажмите кнопку "Отправить"</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-mail-to-honcharov" action="post.php" method="post" onsubmit="send(); return false;">                            
+                            <div class="form-group">                            
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="validate-text" id="validate-text" placeholder="Ваше имя" pattern='[A-Za-zА-Яа-яЁё\s]{2,}' title="Поле должно содержать только буквы" required style="letter-spacing:1px;">
+                                    <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+                                </div>
+                            </div>                                                
+                            <div class="form-group">
+                                <div class="input-group" data-validate="email">
+                                    <input type="text" class="form-control" name="validate-email" id="validate-email" placeholder="Ваш Email" required style="letter-spacing:1px;">
+                                    <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+                                </div>
+                            </div>                        
+                            <div class="form-group">                            
+                                <div class="input-group" data-validate="length" data-length="5">
+                                    <textarea type="text" class="form-control" name="validate-length" id="validate-length" placeholder="Ваше сообщение" rows="5" required style="letter-spacing:1px;"></textarea>
+                                    <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+                                </div>
+                            </div>                     
+                            <button type="submit" class="btn btn-success col-xs-12" disabled style="letter-spacing:1px;">Отправить</button>
+                        </form>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- Modal Thanks -->
+        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <p class="text-center fs22">Ваше письмо отправлено.<br> В ближайшее время я свяжусь с Вами.<br> С уважением, Александр Гончаров.</p>
+            </div>
+          </div>
+        </div>              
+        <div class="container-fluid cust-header-bg">
+            <div class="container">
+                <!-- Header Block / Start -->
+                <div class="row cust_header_block">
+                    <div class="col-xs-12 text-center">                        
+                            <div class="avatar"></div>                              
+                            <h1 class="fs28 cust-h1">Александр Гончаров<br> веб-дизайнер</h1>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <noindex>    
+                            <a href="http://vk.com/aleksandr.honcharov" rel="nofollow" target="_blank"><i id="social" class="fa fa-vk fa-2x"></i></a>
+                            <a href="https://www.facebook.com/charaleksandr" rel="nofollow" target="_blank"><i id="social" class="fa fa-facebook-square fa-2x"></i></a>
+                            <a href="http://ua.linkedin.com/pub/александр-гончаров/87/5a/805/" rel="nofollow" target="_blank"><i id="social" class="fa fa-linkedin fa-2x"></i></a>
+                            <a href="https://plus.google.com/u/0/109861414618393061846/posts" rel="nofollow" target="_blank"><i id="social" class="fa fa-google-plus-square fa-2x"></i></a>
+                            <a href="https://twitter.com/honcharov_aleks" rel="nofollow" target="_blank"><i id="social" class="fa fa-twitter-square fa-2x"></i></a>
+                            <a href="#" rel="nofollow" data-toggle="modal" data-target=".bootstrap-modal"><i id="social" class="fa fa-envelope-square fa-2x"></i></a>                            
+                        </noindex>
+                    </div>                    
+                </div>
+                <!-- Header Block / End -->
+            </div><!-- .container -->
+        </div><!-- .container-fluid .cust-header-bg -->
+
+        <div class="container">    
+            <!-- Portfolio / Start -->
+            <div class="row cust_portfolio_block">
+                <div class="col-xs-12 text-center">
+                    <h2 class="fs22 cust-block-header mt0 mb40">Портфолио</h2>
+<!--                    <hr style="width:95%;border-top:1px solid rgba(0,85,166,.4);" class="mt40">-->
+                </div>
+                
+				<!-- Portfolio item -->
+				<div class="col-xs-4 text-center" style="padding-left: 40px;">
+                    <div class="cust-port-descr-wrap">                                             
+                        <h3 class="fs16 pt20">Вебинар<br> промо-страница</h3>
+						<img src="http://wdportfolio.honcharovs.com/20-08-2014-webinar/screenshots/20-08-2014-webinar-thumb.png" alt="" width="245" height="245">
+						<noindex>
+                            <a class="btn btn-default" href="http://wdportfolio.honcharovs.com/20-08-2014-webinar/demo-page.html" target="_self" rel="nofollow">                            
+                                <div style="border:1px solid #fff;border-radius:150px;width:30px;height:30px;margin:0 auto;">
+									<span class="glyphicon glyphicon-hand-up" style="position:relative;top:6px;right:1px;"></span>
+								</div>
+								Смотреть демонстрацию							
+							</a>                       
+                        </noindex>
+                    </div>
+                </div>
+                
+				<!-- Portfolio item -->
+				<div class="col-xs-4 text-center" style="padding-left: 40px;">
+                    <div class="cust-port-descr-wrap">                                             
+                        <h3 class="fs16">Евраз / Бизнес-Форум<br> промо-страница конференции</h3>
+						<img src="http://wdportfolio.honcharovs.com/19-08-2014-business-forum/screenshots/19-08-2014-business-forum-thumb.png" alt="" width="245" height="245">
+						<noindex>
+							<a class="btn btn-default" href="http://wdportfolio.honcharovs.com/19-08-2014-business-forum/demo-page.html" target="_self" rel="nofollow">
+								<div style="border:1px solid #fff;border-radius:150px;width:30px;height:30px;margin:0 auto;">
+									<span class="glyphicon glyphicon-hand-up" style="position:relative;top:6px;right:1px;"></span>
+								</div>
+								Смотреть демонстрацию							
+							</a>                        
+						</noindex>
+					</div>
+                </div>
+				
+				<!-- Portfolio item -->
+				<div class="col-xs-4 text-center" style="padding-left: 40px;">
+                    <div class="cust-port-descr-wrap">
+                        <h3 class="fs16 pt20">Клубный дом<br> "Артемовский"</h3>
+						<img src="http://wdportfolio.honcharovs.com/31-07-2014-club-house-artemovskiy/screenshots/31-07-2014-club-house-artemovskiy-thumb.jpg" alt="" width="245" height="245">
+                        <noindex> 
+                            <a class="btn btn-default" href="http://wdportfolio.honcharovs.com/31-07-2014-club-house-artemovskiy/demo-page.html" target="_self" rel="nofollow">
+                                <div style="border:1px solid #fff;border-radius:150px;width:30px;height:30px;margin:0 auto;">
+									<span class="glyphicon glyphicon-hand-up" style="position:relative;top:6px;right:1px;"></span>
+								</div>
+								Смотреть демонстрацию							
+							</a>
+                        </noindex>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Portfolio / End -->
+        </div>
+        
+        <!-- Contact me / Start -->
+        <div class="container">
+            <div class="row mt20">
+                <div class="col-xs-12 text-center">                
+                    <h2 class="fs22 cust-block-header cust-write-me-header mt20 mb0">Контакты</h2>                
+                </div>
+            </div>     
+        </div>       
+                            
+        <div class="container-fluid cust-contact-me-bg">            
+            <div class="container">                
+                <div class="row cust_contact_me_block mt40 mb20">
+                    <div class="col-xs-10 col-xs-offset-1 text-center cust-form-wrap">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <form class="form-mail-to-honcharov" action="post.php" method="post" onsubmit="send(); return false;">
+                                    <legend class="fs20 text-left">Написать мне</legend>
+                                    <div class="form-group">                            
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="validate-text" id="validate-text" placeholder="Ваше имя" pattern='[A-Za-zА-Яа-яЁё\s]{2,}' title="Поле должно содержать только буквы" required>
+                                            <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+                                        </div>
+                                    </div>                                                
+                                    <div class="form-group">
+
+                                        <div class="input-group" data-validate="email">
+                                            <input type="text" class="form-control" name="validate-email" id="validate-email" placeholder="Ваш Email" required>
+                                            <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+                                        </div>
+                                    </div>                        
+                                    <div class="form-group">                            
+                                        <div class="input-group" data-validate="length" data-length="5">
+                                            <textarea type="text" class="form-control" name="validate-length" id="validate-length" placeholder="Ваше сообщение" rows="5" required></textarea>
+                                            <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+                                        </div>
+                                    </div>                     
+                                    <button type="submit" class="btn btn-success col-xs-12" disabled>Отправить</button>
+                                </form>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <h3 class="fs20">Позвонить мне</h3>
+                                <div class="text-right fs18" style="color:#fff;letter-spacing:1px;">
+                                    <p>тел.: +38 (067) 522-37-21</p>
+                                    <p>тел.: +38 (093) 485-31-09</p>
+                                    <p>skype.: goncharov.av</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <!-- Contact me / End -->                    
+            </div><!-- .container -->                  
+        </div><!-- .container-fluid cust-contact-me-bg -->            
+        
+        <div class="container">
+            <!-- Footer Block / Start -->
+            <div class="row cust_footer_block mb20">
+                <div class="col-xs-26 text-center">                    
+                    © 2014 | Александр Гончаров | <a href="http://wd.honcharovs.com" rel="nofollow" target="_self">wd.honcharovs.com</a>
+                </div>
+            </div>
+            <!-- Footer Block / End -->
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- compiled and minified Bootstrap JavaScript -->
+        <script src="js/bootstrap.js"></script>
+        <!-- timeout modal -->
+        <script>
+            var form = document.querySelector('.form-mail-to-honcharov');
+            function send() {
+                $('#basicModal').modal('show');
+                setTimeout("form.submit();", 2500);
+            }
+        </script>   
+        <!-- form validate cwitch -->
+        <script src="js/form-validate.js"></script>        
+        <!-- nice scroll -->
+		<script src="js/jquery.nicescroll.min.js"></script>
+		<script>
+			$(document).ready(
+				function() {
+					$("body").niceScroll();
+				}
+				);		
+		</script>
+		<noscript>
+			<style>
+				html, body {
+					overflow:visible;
+				}
+			</style>
+		</noscript>
+    </body>
+</html>
