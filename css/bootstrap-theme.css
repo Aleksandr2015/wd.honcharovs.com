@@ -165,6 +165,7 @@ a, a:hover, a:active, a:focus {color: #3472BD;}
     border: 1px solid rgba(52,114,189,.85);  
 */
     box-shadow: 0px 0px 15px rgba(0,0,0,.5);  
+  transition: background 0.3s;
 }
 
 .cust-port-descr-wrap:hover {
